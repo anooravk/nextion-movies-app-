@@ -54,28 +54,24 @@ class FavoriteMoviesScreen extends StatelessWidget {
                           fit: BoxFit.fitHeight,
                         ),
                       ),
-                      title: Expanded(
-                        child: Text(
-                          movie.title ?? "",
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontFamily: TextFontFamily.poppinsBold,
-                            fontSize: 16.0,
-                            color: ColorResources.white,
-                          ),
+                      title: Text(
+                        movie.title ?? "",
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontFamily: TextFontFamily.poppinsBold,
+                          fontSize: 16.0,
+                          color: ColorResources.white,
                         ),
                       ),
-                      subtitle: Expanded(
-                        child: Text(
-                          movie.overview ?? "",
-                          maxLines: 4,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontFamily: TextFontFamily.poppinsRegular,
-                            fontSize: 14.0,
-                            color: ColorResources.white,
-                          ),
+                      subtitle: Text(
+                        movie.overview ?? "",
+                        maxLines: 4,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontFamily: TextFontFamily.poppinsRegular,
+                          fontSize: 14.0,
+                          color: ColorResources.white,
                         ),
                       ),
                     );

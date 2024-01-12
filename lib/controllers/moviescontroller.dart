@@ -35,6 +35,7 @@ class VideoController extends GetxController {
         _videoList.value = movies;
       } else {}
     } catch (e) {
+      print(e);
       Get.snackbar(
         'Error',
         'Failed to fetch movies. Please check your internet connection.',
